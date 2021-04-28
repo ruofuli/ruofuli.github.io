@@ -1,0 +1,397 @@
+body {
+    background-color: #FFDC9F;
+    font-family: 'Hammersmith One', sans-serif; 
+}
+
+/* navigation bar*/ 
+.navbar {
+    margin-left: 650px; 
+    margin-right: 650px; 
+    margin-top: 75px;
+}
+
+.navbar ul a, p{
+    color: #653715; 
+    font-size: 24pt; 
+    text-decoration: none;
+}
+
+.navbar ul li {
+    list-style-type: none; 
+    display: inline-block;
+}
+
+.navbar ul {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.navbar ul li a:hover {
+    color: #FFB44A; 
+}
+
+/* home page */ 
+#images {
+    display: inline-block;
+    margin-left: 1000px;
+    margin-top: 250px;
+}
+
+#images #logo-wink {
+    margin-top: -500px;  
+}
+
+.hidden {
+    display: none; 
+}
+
+.letters ul li {
+    display: inline-block;
+}
+
+#orange-n, #i, #purple-n, #o, #s, #a, #u, #r {
+    width: 200px;
+    height: 200px; 
+}
+
+.letters #orange-n {
+    transform: translate(155px, 450px) rotate(-14deg);
+}
+
+.letters #i {
+    transform: translate(155px, 300px) rotate(-19deg); 
+}
+
+.letters #purple-n {
+    transform: translate(230px, 225px) rotate(-14deg); 
+}
+
+.letters #o {
+    transform: translate(345px, 175px) rotate(2deg);
+}
+
+.letters #s {
+    transform: translate(430px, 177px) rotate(4deg); 
+}
+
+.letters #a {
+    transform: translate(520px, 225px) rotate(14deg); 
+}
+
+.letters #u {
+    transform: translate(590px, 300px) rotate(19deg); 
+}
+
+.letters #r {
+    transform: translate(650px, 450px) rotate(14deg); 
+}
+
+.stars ul li{
+    display: inline-block; 
+}
+
+.stars ul li #star1{
+    position: absolute;  
+    margin-top: -35%; 
+    margin-left: 19%; 
+    transform: rotate(-20deg);
+}
+
+.stars ul li #star2{
+    position: absolute;
+    margin-top: -10%;
+    margin-left: 15%;
+    transform: rotate(-6deg); 
+}
+
+.stars ul li #star3 {
+    position: absolute;
+    margin-top: -18%; 
+    margin-left: 30%;
+}
+
+.stars ul li #star4 {
+    position: absolute;
+    margin-top: -35%;
+    margin-left: 80%;
+    transform: rotate(15deg); 
+}
+
+.stars ul li #star5 {
+    position: absolute; 
+    margin-top: -13%; 
+    margin-left: 65%; 
+    transform: rotate(8deg); 
+}
+
+.sparkles ul li{
+    display: inline-block; 
+}
+
+.sparkles ul li #sparkle1 {
+    position: absolute;
+    margin-top: -30%; 
+    margin-left: 8%;
+}
+
+.sparkles ul li #sparkle2{
+    position: absolute;
+    margin-top: -20%;
+    margin-left: 20%;
+}
+
+.sparkles ul li #sparkle3{
+    position: absolute; 
+    margin-top: -12%; 
+    margin-left: 0.75%;
+}
+
+.sparkles ul li #sparkle4 {
+    position: absolute; 
+    margin-top: -38%;
+    margin-left: 60%; 
+}
+
+.sparkles ul li #sparkle5 {
+    position: absolute; 
+    margin-top: -23%;
+    margin-left: 55%; 
+}
+
+.sparkles ul li #sparkle6 {
+    position: absolute;
+    margin-top: -15%;
+    margin-left: 75%; 
+}
+
+#images, #star2, #star4, #sparkle1, #star3, #sparkle6{
+    animation-name: floating1; 
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+}
+
+#star1, #star5, #sparkle2, #sparkle3, #sparkle4, #sparkle5{
+    animation-name: floating2; 
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating1 {
+    0% {transform: translate(0, 0px);}
+    50% {transform: translate(0, 15px);}
+    100% {transform: translate(0, -0px);}
+}
+
+@keyframes floating2 {
+    0% {transform: translate(0, 0px);}
+    50% {transform: translate(0, -15px);}
+    100% {transform: translate(0, 0px);}
+}
+
+/*about page*/
+.about-images{
+    display: inline-block;
+}
+
+.about-images #about-pfp{
+    transform: translate(550px, 150px); 
+}
+
+.about-images #about-label{
+    transform: translate(600px, -425px); 
+}
+
+p {
+    width: 750px;
+    transform: translate(1250px, -450px); 
+}
+
+/*shop page*/ 
+#shop-label{
+    transform: translate(825px, 125px); 
+    width: 900px; 
+}
+
+.art-prints{
+    margin-top: 10%; 
+}
+
+.art-prints #item {
+    display: inline-block; 
+
+    width: 330px;
+    height: 416px; 
+    object-fit: cover; 
+    overflow: hidden; 
+}
+
+.art-prints .print-titles ul li {
+    display: inline-block;
+    list-style-type: none; 
+}
+
+.art-prints .print-images, .art-prints .print-titles ul{
+    margin-left: 25px; 
+    margin-right: 25px; 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+#title1, #title2, #title3 {
+    transform: translateX(-10px); 
+}
+
+.crochet-corner{
+    margin-top: 200px; 
+}
+
+.crochet-corner .crochet-images #item{
+    display: inline-block; 
+
+    width: 330px;
+    height: 330px;
+    object-fit: fill;
+    overflow: hidden; 
+}
+
+.crochet-corner .crochet-images {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.crochet-corner .crochet-titles #crochet-title {
+    display: inline-block; 
+}
+
+.crochet-corner .crochet-titles{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-content: center; 
+
+    margin-bottom: 200px; 
+}
+
+#chick:hover, #kirby:hover, #elephant:hover{
+    color: #FFB44A; 
+    cursor: pointer; 
+}
+
+#chick {
+    transform: translate(-50px, 20px);  
+}
+
+#kirby {
+    transform: translate(25px, 20px);  
+}
+
+#elephant {
+    transform: translate(80px, 20px); 
+}
+h3 {
+    font-family: 'Hammersmith One', sans-serif; 
+    color: #653715; 
+    font-size: 36pt; 
+
+    margin-left: 400px; 
+}
+
+#title1, #title2, #title3, .crochet-titles {
+    font-family: 'Hammersmith One', sans-serif; 
+    color: #653715;
+    font-size: 24pt; 
+}
+	
+#title1:hover, #title2:hover, #title3:hover{
+    color: #FFB44A; 
+    cursor: pointer; 
+}
+
+#item:hover{
+    cursor: pointer; 
+}
+
+/*contact page*/ 
+#contact-label {
+    width: 950px; 
+    height: auto;
+
+    transform: translate(350px, 100px); 
+}
+
+h1 {
+    font-family: 'Hammersmith One', sans-serif; 
+    color: #653715; 
+    font-size: 72pt; 
+    font-style: normal; 
+}
+
+h2 {
+    font-family: 'Hammersmith One', sans-serif; 
+    color: #653715;
+    font-size: 48pt; 
+    font-style: normal; 
+
+    transform: translateY(-75px); 
+}
+
+.contact-text{
+    transform: translate(450px, 25px); 
+    width: 800px; 
+    margin: 0px; 
+}
+
+.socials ul li{
+    display: inline-block; 
+    transform: translate(420px, -50px); 
+}
+
+.socials ul li #tiktok, .socials ul li #etsy {
+    margin-left: 50px; 
+}
+
+.message-input #email-input{ 
+    border-radius: 25px; 
+    background-color: #FFEDD4;
+
+    width: 475px; 
+    height: 55px;
+    transform: translate(1500px, -625px); 
+}
+
+.message-input #subject-input {
+    border-radius: 25px; 
+    background-color: #FFEDD4;
+
+    width: 475px; 
+    height: 55px;
+    transform: translate(1500px, -610px); 
+}
+
+.message-input #content-input {
+    border-radius: 25px; 
+    background-color: #FFEDD4;
+
+    width: 475px; 
+    height: 410px;
+    transform: translate(1500px, -595px);
+}
+
+p1 {
+    font-family: 'Hammersmith One', sans-serif;
+    color: #653715;
+    opacity: 0.75; 
+    font-size: 18pt;
+
+    display: flex;
+    margin-left: 20px; 
+    padding-top: 13px; 
+}
